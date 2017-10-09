@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    tools:context="com.ineedserv.ineed.RegistraSolicitante">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nroClave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:text=""
+            android:textColor="@color/rojosuavetexto" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="30dp"
+            android:src="@drawable/ineed" />
+
+        <EditText
+            android:id="@+id/nroConfirmacion"
+            android:inputType="number"
+            android:maxLength="@string/nroVerificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:hint="@string/registraSolicitantenro"/>
+
+        <EditText
+            android:id="@+id/nombre"
+            android:inputType="text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:hint="@string/registraSolicitantenom"/>
+
+        <EditText
+            android:id="@+id/correo"
+            android:inputType="textEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:hint="@string/registraSolicitanteemail"/>
+
+        <Button
+            android:id="@+id/btnConfirmacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingTop="20dp"
+            android:text="@string/registraSolicitantebtn"
+            android:onClick="verificaConfirmacion"/>
+    </LinearLayout>
+</LinearLayout>
